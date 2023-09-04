@@ -1,0 +1,49 @@
+import React, { useLayoutEffect } from "react";
+import { LogoGitHub, LogoLinkedin, LogoEmail } from "../assets/Icons";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function Footer() {
+   useLayoutEffect(() => {
+      const ctx = gsap.context(() => {
+         gsap.from(".footer-border", {
+            scrollTrigger: { trigger: ".footer-border" },
+            delay: 0.5,
+            ease: "power4.out", // <- Divider animation
+            scaleX: 0,
+            duration: 3,
+         });
+
+         gsap.from(".logo-container", {
+            scrollTrigger: { trigger: ".logo-container" },
+            delay: 0.5,
+            ease: "power4.out", // <- Title Animation
+            opacity: 0,
+            scale: 0.9,
+            duration: 3,
+         });
+      }, ".footer"); // <- Scope
+
+      return () => ctx.revert(); // <- Cleanup!
+   }, []);
+   return (
+      <footer className="footer">
+         <hr className="footer-border"></hr>
+         <main>
+            <div className="logo-container">
+               <a href="https://github.com/Valenmetal">
+                  <LogoGitHub />
+               </a>
+               <a href="https://www.linkedin.com/in/valentino-geronzi-404945217/">
+                  <LogoLinkedin />
+               </a>
+               <a href="mailto:valentinogeronzi@hotmail.com">
+                  <LogoEmail />
+               </a>
+            </div>
+         </main>
+      </footer>
+   );
+}
