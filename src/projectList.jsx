@@ -15,7 +15,7 @@ export const projectsArray = [
    {
       id: 1,
       name: "Astro E-Commerce",
-      src: "https://streamable.com/1hvr42",
+      src: "https://streamable.com/e/1hvr42?autoplay=1&nocontrols=1",
       github: "https://github.com/Valenmetal/React-Astro-E-Commerce",
       url: "https://valenmetal.github.io/React-Astro-E-Commerce/",
       logos: [
@@ -32,7 +32,7 @@ export const projectsArray = [
    {
       id: 2,
       name: "Shoes E-Commerce 2.0",
-      src: "https://streamable.com/hxrail",
+      src: "https://streamable.com/e/hxrail?autoplay=1&nocontrols=1",
       github: "https://github.com/Valenmetal/React-Ecommerce",
       url: "https://valenmetal.github.io/React-Ecommerce/",
       logos: [
@@ -49,7 +49,7 @@ export const projectsArray = [
    {
       id: 3,
       name: "Shoes E-Commerce",
-      src: "https://streamable.com/k97y58",
+      src: "https://streamable.com/e/k97y58?autoplay=1&nocontrols=1",
       github: "https://github.com/Valenmetal/valenmetal.github.io",
       url: "https://valenmetal.github.io/",
       logos: [

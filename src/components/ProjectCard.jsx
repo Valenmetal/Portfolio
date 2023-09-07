@@ -14,10 +14,22 @@ function ProjectCard({ project }) {
                <LogoGitHub />
             </a>
          </header>
+         <div
+            className="card-video"
+            style={{
+               position: "relative",
+               paddingBottom: "56.206%",
+            }}>
+            <iframe
+               style={{
+                  height: "100%",
+                  position: "absolute",
+                  overflow: "hidden",
+               }}
+               src={project.src}
+               allow="autoplay"></iframe>
+         </div>
 
-         <video className="card-video" autoPlay muted loop>
-            <source src={project.src} type="video/mp4" />
-         </video>
          <footer className="logos-container">
             {project.logos.map((logo) => (
                <>{logo}</>
