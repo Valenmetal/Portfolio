@@ -33,13 +33,15 @@ export default function Footer() {
          <hr className="footer-border"></hr>
          <main>
             <div className="logo-container">
-               <a href="https://github.com/Valenmetal">
+               <a href="https://github.com/Valenmetal" aria-label="Github Profile">
                   <LogoGitHub />
                </a>
-               <a href="https://www.linkedin.com/in/valentino-geronzi-404945217/">
+               <a
+                  href="https://www.linkedin.com/in/valentino-geronzi-404945217/"
+                  aria-label="Linkedin Profile">
                   <LogoLinkedin />
                </a>
-               <a href="mailto:valentinogeronzi@hotmail.com">
+               <a href="mailto:valentinogeronzi@hotmail.com" aria-label="Email Me">
                   <LogoEmail />
                </a>
             </div>

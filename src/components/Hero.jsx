@@ -53,12 +53,16 @@ export default function Hero() {
             <div className="logo-container">
                <p>Web Developer</p>
                <div className="stagger">
-                  <a href="https://github.com/Valenmetal">
+                  <a
+                     href="https://github.com/Valenmetal"
+                     aria-label="Mi Github Profile">
                      <LogoGitHub />
                   </a>
                </div>
                <div className="stagger">
-                  <a href="https://www.linkedin.com/in/valentino-geronzi-404945217/">
+                  <a
+                     href="https://www.linkedin.com/in/valentino-geronzi-404945217/"
+                     aria-label="Mi Linkedin Profile">
                      <LogoLinkedin />
                   </a>
                </div>

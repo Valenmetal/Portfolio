@@ -26,17 +26,17 @@ export default function Navbar() {
             <div></div>
          </div>
          <main className="navbar-items-container">
-            <a id="logo" href="/">
+            <a id="logo" href="/" aria-label="Home Button">
                <img className="navbar_logo" src="V-2.png" alt="logo" />
             </a>
             <ul>
-               <a href="#me">
+               <a href="#me" aria-label="About Me Section">
                   <li>Me</li>
                </a>
-               <a href="#projects">
+               <a href="#projects" aria-label="Mi Projects Section">
                   <li>Proyects</li>
                </a>
-               <a href="#tecnologies">
+               <a href="#tecnologies" aria-label="Tecnologies I Use">
                   <li>Tecnologies</li>
                </a>
             </ul>

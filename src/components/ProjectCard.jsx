@@ -5,12 +5,12 @@ function ProjectCard({ project }) {
    return (
       <div className="proyect-card">
          <header className="card-header">
-            <a target="_blank" href={project.url}>
+            <a target="_blank" href={project.url} aria-label="Project's Link">
                <h3 title="Project title">
                   {project.name} <LogoExternal />
                </h3>
             </a>
-            <a href={project.github}>
+            <a href={project.github} aria-label="Project GitHub's Link">
                <LogoGitHub />
             </a>
          </header>
