@@ -227,13 +227,11 @@ nav {
          transform: scale(1.1);
       }
       h1 {
-         font-size: 5em;
+         font-size: clamp(3.7rem, 3vw + 3rem, 5rem);
          font-family: "Redaction Regular", sans-serif;
-         font-style: italic;
-         font-weight: 400;
       }
       p {
-         font-size: 2em;
+         font-size: clamp(1.429rem, 2vw + 1rem, 2rem);
       }
       .from {
          display: flex;
@@ -258,7 +256,7 @@ nav {
    width: 70%;
    margin: 0 auto 0 auto;
    h2 {
-      font-size: 4em;
+      font-size: clamp(1rem, 1vw + 2.5rem, 4rem);
       font-family: "Syne", Avenir;
       font-weight: 500;
       margin-bottom: 2em;
@@ -303,6 +301,7 @@ nav {
             );
 
          .card-header {
+            font-size: clamp(0.143rem, 2vw + 1rem, 1rem);
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -328,10 +327,10 @@ nav {
    width: 70%;
    display: flex;
    flex-direction: column;
-   margin: 0 auto 10em auto;
+   margin: 0 auto 6em auto;
    align-items: center;
    h2 {
-      font-size: 4em;
+      font-size: clamp(1rem, 1vw + 2.5rem, 4rem);
       font-family: "Syne", Avenir;
       font-weight: 500;
       margin: 1em 0 1.5em 0;
@@ -397,4 +396,93 @@ nav {
 .logos {
    width: 3em;
    height: 3em;
+}
+
+@media screen and (max-width: 1280px) {
+   nav {
+      ul {
+         width: 30vh;
+      }
+   }
+}
+@media screen and (max-width: 878px) {
+   .divider {
+      margin-top: 4em;
+   }
+   .projects {
+      h2 {
+         margin-bottom: 1em;
+      }
+      .grid-container {
+         grid-template: 1fr / 100%;
+         gap: 2em;
+         grid-template-areas:
+            "."
+            "."
+            "."
+            ".";
+         .proyect-card {
+            .logos-container {
+               flex-wrap: wrap;
+            }
+         }
+      }
+   }
+   .tecnologies {
+      h2 {
+         margin: 0.5em 0 1em 0;
+      }
+   }
+}
+@media screen and (max-width: 522px) {
+   .hero {
+      .hero-container {
+         align-items: center;
+         text-align: center;
+      }
+   }
+   .logo-container {
+      align-items: center;
+
+      a {
+         margin-left: 0.5rem;
+      }
+   }
+   .logos {
+      width: 2.5em;
+      height: 2.5em;
+   }
+   .tecnologies {
+      .tecnologies-container {
+         .logos {
+            width: 4em;
+            height: 4em;
+            margin: 0.8em;
+         }
+      }
+   }
+}
+@media screen and (max-width: 424px) {
+   .logo-container {
+      text-align: start;
+      p {
+         width: min-content;
+      }
+      a {
+         margin-right: 0.5rem;
+      }
+   }
+   nav {
+      ul {
+         flex-direction: column;
+         align-items: end;
+
+         li {
+            font-size: 0.9em;
+         }
+      }
+   }
+   .tecnologies {
+      margin: 0 auto 2em auto;
+   }
 }
