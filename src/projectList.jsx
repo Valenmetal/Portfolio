@@ -15,7 +15,7 @@ export const projectsArray = [
    {
       id: 1,
       name: "Astro E-Commerce",
-      src: "/src/assets/vid/astro.mp4",
+      src: "./src/assets/vid/astro.mp4",
       github: "https://github.com/Valenmetal/React-Astro-E-Commerce",
       url: "https://valenmetal.github.io/React-Astro-E-Commerce/",
       logos: [
@@ -32,7 +32,7 @@ export const projectsArray = [
    {
       id: 2,
       name: "Shoes E-Commerce 2.0",
-      src: "/src/assets/vid/smecommerce20.mp4",
+      src: "src/assets/vid/smecommerce20.mp4",
       github: "https://github.com/Valenmetal/React-Ecommerce",
       url: "https://valenmetal.github.io/React-Ecommerce/",
       logos: [
@@ -49,7 +49,7 @@ export const projectsArray = [
    {
       id: 3,
       name: "Shoes E-Commerce",
-      src: "/src/assets/vid/smecommerce.mp4",
+      src: " https://valentinogeronzi.vercel.app/src/assets/vid/smecommerce.mp4",
       github: "https://github.com/Valenmetal/valenmetal.github.io",
       url: "https://valenmetal.github.io/",
       logos: [
