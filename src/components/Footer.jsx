@@ -16,7 +16,7 @@ export default function Footer() {
             duration: 3,
          });
 
-         gsap.from(".logo-container", {
+         gsap.from(".logo-container, p", {
             scrollTrigger: { trigger: ".logo-container" },
             delay: 0.5,
             ease: "power4.out", // <- Title Animation
@@ -46,6 +46,7 @@ export default function Footer() {
                </a>
             </div>
          </main>
+         <p>Valentino Geronzi</p>
       </footer>
    );
 }
