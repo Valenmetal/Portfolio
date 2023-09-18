@@ -1,1 +1,1 @@
-<meta name="robots" content="index" />
+Sitemap: https://valentinogeronzi.vercel.app/sitemap.xml
