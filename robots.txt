@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
+
 Sitemap: https://valentinogeronzi.vercel.app/sitemap.xml
