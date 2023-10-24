@@ -16,33 +16,33 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Tecnologies() {
+export default function Technologies() {
    useLayoutEffect(() => {
       const ctx = gsap.context(() => {
-         gsap.from("#tecnologies", {
-            scrollTrigger: { trigger: "#tecnologies" },
+         gsap.from("#technologies", {
+            scrollTrigger: { trigger: "#technologies" },
             delay: 0.5,
             ease: "power4.out", // <- Title Animation
             opacity: 0,
             scale: 0.9,
             duration: 3,
          });
-         gsap.from(".tecnologies-container", {
-            scrollTrigger: { trigger: ".tecnologies-container" },
+         gsap.from(".technologies-container", {
+            scrollTrigger: { trigger: ".technologies-container" },
             delay: 0.5,
             scale: 0.95,
             ease: "power4.out", // <- Projects Animation
             opacity: 0,
             duration: 3,
          });
-      }, ".tecnologies"); // <- Scope
+      }, ".technologies"); // <- Scope
 
       return () => ctx.revert(); // <- Cleanup!
    }, []);
    return (
-      <section className="tecnologies">
-         <h2 id="tecnologies">Tecnologies</h2>
-         <main className="tecnologies-container">
+      <section className="technologies">
+         <h2 id="technologies">Technologies</h2>
+         <main className="technologies-container">
             <LogoReact />
             <LogoHTML />
             <LogoCSS />

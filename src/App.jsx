@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import Tecnologies from "./components/Tecnologies";
+import Technologies from "./components/Technologies";
 
 function App() {
    return (
@@ -11,7 +11,7 @@ function App() {
          <Navbar />
          <Hero />
          <Projects />
-         <Tecnologies />
+         <Technologies />
          <Footer />
       </>
    );
