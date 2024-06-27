@@ -37,7 +37,7 @@ export default function Navbar() {
                   <li>Proyects</li>
                </a>
                <a href="#technologies" aria-label="Tecnologies I Use">
-                  <li>Tecnologies</li>
+                  <li>Technologies</li>
                </a>
             </ul>
          </main>
