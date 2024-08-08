@@ -34,7 +34,7 @@ export default function Navbar() {
                   <li>Me</li>
                </a>
                <a href="#projects" aria-label="Mi Projects Section">
-                  <li>Proyects</li>
+                  <li>Projects</li>
                </a>
                <a href="#technologies" aria-label="Technologies I Use">
                   <li>Technologies</li>
