@@ -10,24 +10,27 @@ function ProjectCard({ project }) {
                   {project.name} <LogoExternal />
                </h3>
             </a>
-            <a href={project.github} aria-label="Project GitHub's Link">
-               <LogoGitHub />
-            </a>
+            <>
+               {project.github === "" ? (
+                  <></>
+               ) : (
+                  <a href={project.github} aria-label="Project GitHub's Link">
+                     <LogoGitHub />
+                  </a>
+               )}
+            </>
          </header>
-         <div
-            className="card-video"
-            style={{
-               position: "relative",
-               paddingBottom: "56.206%",
-            }}>
-            <iframe
+         <div className="card-video">
+            <video
+               autoPlay
+               muted
+               loop
                style={{
-                  height: "100%",
+                  height: "82%",
                   position: "absolute",
                   overflow: "hidden",
                }}
-               src={project.src}
-               allow="autoplay"></iframe>
+               src={project.src}></video>
          </div>
 
          <footer className="logos-container">

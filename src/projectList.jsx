@@ -14,8 +14,24 @@ import {
 export const projectsArray = [
    {
       id: 1,
+      name: "Bonofilms",
+      src: "/bono.mp4",
+      github: "",
+      url: "https://bonofilms.com/",
+      logos: [
+         <LogoReact />,
+         <LogoGsap />,
+         <LogoSass />,
+         <LogoGit />,
+         <LogoHTML />,
+         <LogoCSS />,
+         <LogoJS />,
+      ],
+   },
+   {
+      id: 2,
       name: "Astro E-Commerce",
-      src: "https://streamable.com/e/1hvr42?autoplay=1&nocontrols=1",
+      src: "/astro.mp4",
       github: "https://github.com/Valenmetal/React-Astro-E-Commerce",
       url: "https://valenmetal.github.io/React-Astro-E-Commerce/",
       logos: [
@@ -30,9 +46,9 @@ export const projectsArray = [
       ],
    },
    {
-      id: 2,
+      id: 3,
       name: "Shoes E-Commerce 2.0",
-      src: "https://streamable.com/e/hxrail?autoplay=1&nocontrols=1",
+      src: "/smecommerce20.mp4",
       github: "https://github.com/Valenmetal/React-Ecommerce",
       url: "https://valenmetal.github.io/React-Ecommerce/",
       logos: [
@@ -47,9 +63,9 @@ export const projectsArray = [
       ],
    },
    {
-      id: 3,
+      id: 4,
       name: "Shoes E-Commerce",
-      src: "https://streamable.com/e/k97y58?autoplay=1&nocontrols=1",
+      src: "/smecommerce.mp4",
       github: "https://github.com/Valenmetal/valenmetal.github.io",
       url: "https://valenmetal.github.io/",
       logos: [
