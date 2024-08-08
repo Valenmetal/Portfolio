@@ -36,8 +36,8 @@ export default function Navbar() {
                <a href="#projects" aria-label="Mi Projects Section">
                   <li>Proyects</li>
                </a>
-               <a href="#technologies" aria-label="Tecnologies I Use">
-                  <li>Tecnologies</li>
+               <a href="#technologies" aria-label="Technologies I Use">
+                  <li>Technologies</li>
                </a>
             </ul>
          </main>
