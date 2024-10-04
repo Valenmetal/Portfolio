@@ -9,14 +9,14 @@ import {
    LogoJS,
    LogoGsap,
    LogoFireBase,
-} from "./assets/Icons";
+} from "./assets/Icons"
 
 export const projectsArray = [
    {
       id: 1,
       name: "Bonofilms",
       src: "/bono.mp4",
-      github: "",
+      github: "https://github.com/Valenmetal/bonofilms",
       url: "https://bonofilms.com/",
       logos: [
          <LogoReact />,
@@ -77,4 +77,4 @@ export const projectsArray = [
          <LogoGit />,
       ],
    },
-];
+]
