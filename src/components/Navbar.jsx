@@ -27,7 +27,7 @@ export default function Navbar() {
          </div>
          <main className="navbar-items-container">
             <a id="logo" href="/" aria-label="Home Button">
-               <img className="navbar_logo" src="V-2.png" alt="logo" />
+               <img className="navbar_logo" src="V-2.png" alt="Valentino Geronzi Logo" />
             </a>
             <ul>
                <a href="#me" aria-label="About Me Section">
