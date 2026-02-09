@@ -1,67 +1,54 @@
-import React, { useRef, useEffect } from "react";
-import { LogoGitHub, LogoExternal } from "../assets/Icons";
+import React, { useRef, useEffect } from "react"
+import { LogoGitHub, LogoExternal } from "../assets/Icons"
 
 function ProjectCard({ project }) {
-   const videoRef = useRef(null);
+   const videoRef = useRef(null)
 
    useEffect(() => {
       const observer = new IntersectionObserver(
          (entries) => {
             entries.forEach((entry) => {
                if (entry.isIntersecting) {
-                  videoRef.current.play();
+                  videoRef.current.play()
                } else {
-                  videoRef.current.pause();
+                  videoRef.current.pause()
                }
-            });
+            })
          },
          {
             threshold: 0.5, // Play when 50% visible
-         }
-      );
+         },
+      )
 
       if (videoRef.current) {
-         observer.observe(videoRef.current);
+         observer.observe(videoRef.current)
       }
 
       return () => {
          if (videoRef.current) {
-            observer.unobserve(videoRef.current);
+            observer.unobserve(videoRef.current)
          }
-      };
-   }, []);
+      }
+   }, [])
 
    return (
       <div className="proyect-card">
+         <div className="card-video">
+            <video ref={videoRef} muted loop playsInline src={project.src}></video>
+         </div>
          <header className="card-header">
-            <a target="_blank" href={project.url} aria-label="Project's Link">
-               <h3 title="Project title">
-                  {project.name} <LogoExternal />
-               </h3>
-            </a>
-            <>
-               {project.github === "" ? (
-                  <></>
-               ) : (
+            <h3 title="Project title">{project.name}</h3>
+            <div className="card-links">
+               {project.github && (
                   <a href={project.github} aria-label="Project GitHub's Link">
                      <LogoGitHub />
                   </a>
                )}
-            </>
+               <a target="_blank" href={project.url} aria-label="Project's Link">
+                  <LogoExternal />
+               </a>
+            </div>
          </header>
-         <div className="card-video">
-            <video
-               ref={videoRef}
-               muted
-               loop
-               playsInline
-               style={{
-                  height: "82%",
-                  position: "absolute",
-                  overflow: "hidden",
-               }}
-               src={project.src}></video>
-         </div>
 
          <footer className="logos-container">
             {project.logos.map((logo, index) => (
@@ -69,6 +56,6 @@ function ProjectCard({ project }) {
             ))}
          </footer>
       </div>
-   );
+   )
 }
-export default ProjectCard;
+export default ProjectCard

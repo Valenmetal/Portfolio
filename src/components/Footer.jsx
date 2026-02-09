@@ -1,9 +1,9 @@
-import React, { useLayoutEffect } from "react";
-import { LogoGitHub, LogoLinkedin, LogoEmail } from "../assets/Icons";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useLayoutEffect } from "react"
+import { LogoGitHub, LogoLinkedin, LogoEmail } from "../assets/Icons"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Footer() {
    useLayoutEffect(() => {
@@ -14,7 +14,7 @@ export default function Footer() {
             ease: "power4.out", // <- Divider animation
             scaleX: 0,
             duration: 3,
-         });
+         })
 
          gsap.from(".logo-container, p", {
             scrollTrigger: { trigger: ".logo-container" },
@@ -23,30 +23,27 @@ export default function Footer() {
             opacity: 0,
             scale: 0.9,
             duration: 3,
-         });
-      }, ".footer"); // <- Scope
+         })
+      }, ".footer") // <- Scope
 
-      return () => ctx.revert(); // <- Cleanup!
-   }, []);
+      return () => ctx.revert() // <- Cleanup!
+   }, [])
    return (
       <footer className="footer">
-         <hr className="footer-border"></hr>
-         <main>
-            <div className="logo-container">
-               <a href="https://github.com/Valenmetal" aria-label="Github Profile">
-                  <LogoGitHub />
-               </a>
-               <a
-                  href="https://www.linkedin.com/in/valentino-geronzi-404945217/"
-                  aria-label="Linkedin Profile">
-                  <LogoLinkedin />
-               </a>
-               <a href="mailto:valentinogeronzi@hotmail.com" aria-label="Email Me">
-                  <LogoEmail />
-               </a>
-            </div>
-         </main>
-         <p>Valentino Geronzi</p>
+         <div className="logo-container">
+            <a href="https://github.com/Valenmetal" aria-label="Github Profile">
+               <LogoGitHub />
+            </a>
+            <a
+               href="https://www.linkedin.com/in/valentino-geronzi-404945217/"
+               aria-label="Linkedin Profile">
+               <LogoLinkedin />
+            </a>
+            <a href="mailto:valentinogeronzi@hotmail.com" aria-label="Email Me">
+               <LogoEmail />
+            </a>
+         </div>
+         <p>Valentino Geronzi — Full Stack Developer</p>
       </footer>
-   );
+   )
 }

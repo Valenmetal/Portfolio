@@ -1,5 +1,5 @@
-import React, { useLayoutEffect } from "react";
-import { gsap } from "gsap";
+import React, { useLayoutEffect } from "react"
+import { gsap } from "gsap"
 
 export default function Navbar() {
    useLayoutEffect(() => {
@@ -10,37 +10,39 @@ export default function Navbar() {
             y: -200,
             duration: 1.5,
             stagger: 0.2,
-         });
-      }, ".navbar-items-container"); // <- Scope
+         })
+      }, ".navbar-items-container") // <- Scope
 
-      return () => ctx.revert(); // <- Cleanup!
-   }, []);
+      return () => ctx.revert() // <- Cleanup!
+   }, [])
    return (
       <nav>
-         <div className="gradient-blur">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-         </div>
          <main className="navbar-items-container">
             <a id="logo" href="/" aria-label="Home Button">
-               <img className="navbar_logo" src="V-2.png" alt="Valentino Geronzi Logo" />
+               <img
+                  className="navbar_logo"
+                  src="V-2.png"
+                  alt="Valentino Geronzi Logo"
+               />
             </a>
             <ul>
-               <a href="#me" aria-label="About Me Section">
-                  <li>Me</li>
-               </a>
-               <a href="#projects" aria-label="Mi Projects Section">
-                  <li>Projects</li>
-               </a>
-               <a href="#technologies" aria-label="Technologies I Use">
-                  <li>Technologies</li>
-               </a>
+               <li>
+                  <a href="#me" aria-label="About Me Section">
+                     Me
+                  </a>
+               </li>
+               <li>
+                  <a href="#projects" aria-label="My Projects Section">
+                     Projects
+                  </a>
+               </li>
+               <li>
+                  <a href="#technologies" aria-label="Technologies I Use">
+                     Technologies
+                  </a>
+               </li>
             </ul>
          </main>
       </nav>
-   );
+   )
 }

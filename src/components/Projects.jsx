@@ -1,43 +1,43 @@
-import React, { useLayoutEffect } from "react";
-import ProjectCard from "./ProjectCard";
-import { projectsArray } from "../projectList";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useLayoutEffect } from "react"
+import ProjectCard from "./ProjectCard"
+import { projectsArray } from "../projectList"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Projects() {
    useLayoutEffect(() => {
       const ctx = gsap.context(() => {
-         gsap.from("#projects-title", {
-            scrollTrigger: { trigger: "#projects-title" },
-            delay: 0.5,
-            ease: "power4.out", // <- Title Animation
-            opacity: 0,
-            scale: 0.9,
-            duration: 3,
-         });
-
-         gsap.from(".grid-container", {
-            scrollTrigger: { trigger: ".grid-container" },
-            delay: 0.5,
-            scale: 0.95,
-            ease: "power4.out", // <- Projects Animation
-            opacity: 0,
-            duration: 3,
-         });
+         gsap.utils.toArray(".proyect-card").forEach((card) => {
+            gsap.from(card, {
+               scrollTrigger: {
+                  trigger: card,
+                  start: "top bottom-=100px",
+                  end: "top center",
+                  scrub: 1,
+               },
+               opacity: 0,
+               y: 100,
+               scale: 0.95,
+               ease: "power2.out",
+            })
+         })
 
          gsap.from(".divider", {
-            scrollTrigger: { trigger: ".divider" },
-            delay: 0.5,
-            ease: "power4.out", // <- Divider animation
+            scrollTrigger: {
+               trigger: ".divider",
+               start: "top bottom",
+               end: "bottom bottom",
+               scrub: 1,
+            },
             scaleX: 0,
-            duration: 3,
-         });
-      }, ".projects"); // <- Scope
+            ease: "power2.out",
+         })
+      }, ".projects") // <- Scope
 
-      return () => ctx.revert(); // <- Cleanup!
-   }, []);
+      return () => ctx.revert() // <- Cleanup!
+   }, [])
 
    return (
       <section className="projects">
@@ -53,5 +53,5 @@ export default function Projects() {
          </main>
          <hr className="divider"></hr>
       </section>
-   );
+   )
 }
