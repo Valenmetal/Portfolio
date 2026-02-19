@@ -40,7 +40,7 @@ export default function Projects() {
    }, [])
 
    return (
-      <section className="projects">
+      <section className="projects" id="projects">
          <header>
             <h2 id="projects-title">Projects</h2>
          </header>

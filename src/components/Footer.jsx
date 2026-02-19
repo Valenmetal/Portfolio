@@ -8,25 +8,17 @@ gsap.registerPlugin(ScrollTrigger)
 export default function Footer() {
    useLayoutEffect(() => {
       const ctx = gsap.context(() => {
-         gsap.from(".footer-border", {
-            scrollTrigger: { trigger: ".footer-border" },
-            delay: 0.5,
-            ease: "power4.out", // <- Divider animation
-            scaleX: 0,
-            duration: 3,
-         })
-
-         gsap.from(".logo-container, p", {
+         gsap.from(".logo-container, .footer-text", {
             scrollTrigger: { trigger: ".logo-container" },
             delay: 0.5,
-            ease: "power4.out", // <- Title Animation
+            ease: "power4.out",
             opacity: 0,
             scale: 0.9,
             duration: 3,
          })
-      }, ".footer") // <- Scope
+      }, ".footer")
 
-      return () => ctx.revert() // <- Cleanup!
+      return () => ctx.revert()
    }, [])
    return (
       <footer className="footer">
@@ -43,7 +35,10 @@ export default function Footer() {
                <LogoEmail />
             </a>
          </div>
-         <p>Valentino Geronzi — Full Stack Developer</p>
+         <p className="footer-text">Valentino Geronzi — Full Stack Developer</p>
+         <p className="footer-text footer-copyright">
+            © 2026 · Todos los derechos reservados
+         </p>
       </footer>
    )
 }
