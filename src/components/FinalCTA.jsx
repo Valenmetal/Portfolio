@@ -34,7 +34,7 @@ export default function FinalCTA() {
             </p>
             <div className="final-cta-buttons">
                <a href="mailto:valentinogeronzi@hotmail.com" className="btn-primary">
-                  Agenda tu consulta gratis →
+                  Quiero mi prototipo gratuito →
                </a>
                <a
                   href="https://www.linkedin.com/in/valentino-geronzi-404945217/"

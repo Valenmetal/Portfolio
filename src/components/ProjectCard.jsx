@@ -40,13 +40,15 @@ function ProjectCard({ project }) {
             <h3 title="Project title">{project.name}</h3>
             <div className="card-links">
                {project.github && (
-                  <a href={project.github} aria-label="Project GitHub's Link">
+                  <a target="_blank" href={project.github} aria-label="Project GitHub's Link">
                      <LogoGitHub />
                   </a>
                )}
-               <a target="_blank" href={project.url} aria-label="Project's Link">
-                  <LogoExternal />
-               </a>
+               {project.url && (
+                  <a target="_blank" href={project.url} aria-label="Project's Link">
+                     <LogoExternal />
+                  </a>
+               )}
             </div>
          </header>
 

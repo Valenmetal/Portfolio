@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react"
-import { Argentina, LogoGitHub, LogoLinkedin } from "../assets/Icons"
+import { LogoGitHub, LogoLinkedin } from "../assets/Icons"
 import { gsap } from "gsap"
 
 export default function Hero() {
@@ -95,15 +95,12 @@ export default function Hero() {
                      <a
                         href="mailto:valentinogeronzi@hotmail.com"
                         className="btn-primary">
-                        Agenda una consulta gratis →
+                        Quiero mi prototipo gratuito →
                      </a>
                      <a href="#projects" className="btn-secondary">
                         Ver proyectos
                      </a>
                   </div>
-                  <p className="from">
-                     Based in Argentina <Argentina />
-                  </p>
                </div>
             </div>
          </main>

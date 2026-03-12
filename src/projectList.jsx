@@ -18,7 +18,6 @@ export const projectsArray = [
       name: "Urban Harmony Portal",
       src: "/Desktop 2026.02.19 - 16.38.38.02 - Trim.mp4",
       github: "https://github.com/Valenmetal/",
-      url: "https://valenmetal.github.io/",
       logos: [
          <LogoReact />,
          <LogoTypeScript />,
@@ -29,10 +28,9 @@ export const projectsArray = [
    },
    {
       id: 2,
-      name: "Studio V-Design System",
-      src: "/Desktop 2026.02.19 - 16.40.58.03 - Trim.mp4",
+      name: "ArchiTech Solutions",
+      src: "/Desktop 2026.02.19 - 16.46.04.05 - Trim.mp4",
       github: "https://github.com/Valenmetal/",
-      url: "https://valenmetal.github.io/",
       logos: [
          <LogoReact />,
          <LogoTypeScript />,
@@ -43,10 +41,9 @@ export const projectsArray = [
    },
    {
       id: 3,
-      name: "ArchiTech Solutions",
-      src: "/Desktop 2026.02.19 - 16.46.04.05 - Trim.mp4",
+      name: "Structure Flow",
+      src: "/Desktop 2026.02.19 - 16.47.47.06 - Trim.mp4",
       github: "https://github.com/Valenmetal/",
-      url: "https://valenmetal.github.io/",
       logos: [
          <LogoReact />,
          <LogoTypeScript />,
@@ -57,10 +54,9 @@ export const projectsArray = [
    },
    {
       id: 4,
-      name: "Structure Flow",
-      src: "/Desktop 2026.02.19 - 16.47.47.06 - Trim.mp4",
+      name: "Minimalist Spaces",
+      src: "/Desktop 2026.02.19 - 16.49.31.07 - Trim.mp4",
       github: "https://github.com/Valenmetal/",
-      url: "https://valenmetal.github.io/",
       logos: [
          <LogoReact />,
          <LogoTypeScript />,
@@ -71,10 +67,9 @@ export const projectsArray = [
    },
    {
       id: 5,
-      name: "Minimalist Spaces",
-      src: "/Desktop 2026.02.19 - 16.49.31.07 - Trim.mp4",
+      name: "GeoMetric Dashboard",
+      src: "/Desktop 2026.02.19 - 16.51.52.08 - Trim.mp4",
       github: "https://github.com/Valenmetal/",
-      url: "https://valenmetal.github.io/",
       logos: [
          <LogoReact />,
          <LogoTypeScript />,
@@ -85,10 +80,9 @@ export const projectsArray = [
    },
    {
       id: 6,
-      name: "GeoMetric Dashboard",
-      src: "/Desktop 2026.02.19 - 16.51.52.08 - Trim.mp4",
+      name: "Blueprint Visualization",
+      src: "/Desktop 2026.02.19 - 17.05.50.09 - Trim.mp4",
       github: "https://github.com/Valenmetal/",
-      url: "https://valenmetal.github.io/",
       logos: [
          <LogoReact />,
          <LogoTypeScript />,
@@ -99,10 +93,9 @@ export const projectsArray = [
    },
    {
       id: 7,
-      name: "Blueprint Visualization",
-      src: "/Desktop 2026.02.19 - 17.05.50.09 - Trim.mp4",
+      name: "Studio V-Design System",
+      src: "/Desktop 2026.02.19 - 16.40.58.03 - Trim.mp4",
       github: "https://github.com/Valenmetal/",
-      url: "https://valenmetal.github.io/",
       logos: [
          <LogoReact />,
          <LogoTypeScript />,
