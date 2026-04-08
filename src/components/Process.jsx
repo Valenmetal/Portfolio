@@ -7,27 +7,27 @@ gsap.registerPlugin(ScrollTrigger)
 const steps = [
    {
       number: "01",
-      title: "Consulta Gratuita",
+      title: "Discovery & Strategy",
       description:
-         "Conversamos sobre tu estudio, tus objetivos y tu visión. Entiendo qué necesitás antes de proponer nada.",
+         "We discuss your project goals, vision, and technical requirements to define a clear roadmap.",
    },
    {
       number: "02",
-      title: "Propuesta & Diseño",
+      title: "Architecture & Design",
       description:
-         "Presento un concepto visual alineado a tu identidad. Iteramos hasta que estés conforme al 100%.",
+         "I create a visual and structural blueprint aligned with your brand's identity and user needs.",
    },
    {
       number: "03",
-      title: "Desarrollo",
+      title: "Core Development",
       description:
-         "Construyo el sitio con código limpio, animaciones sofisticadas y rendimiento optimizado.",
+         "Building the application with clean, high-performance code and sophisticated GSAP animations.",
    },
    {
       number: "04",
-      title: "Lanzamiento & Soporte",
+      title: "Launch & Growth",
       description:
-         "Publico tu sitio y te brindo soporte continuo para que todo funcione impecable.",
+         "I deploy your site and provide ongoing support to ensure it scales and stays optimized.",
    },
 ]
 
@@ -59,9 +59,9 @@ export default function Process() {
             <span>03</span>
             <div className="label-line" />
          </div>
-         <h2>Cómo Trabajo</h2>
+         <h2>Process</h2>
          <p className="process-subtitle">
-            Un proceso transparente donde vos tenés el control en cada etapa.
+            A transparent workflow where you're in control at every milestone.
          </p>
          <div className="process-timeline">
             {steps.map((step, i) => (

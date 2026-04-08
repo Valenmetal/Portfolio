@@ -3,9 +3,8 @@ import "./App.scss"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import SocialProof from "./components/SocialProof"
-import Services from "./components/Services"
+import RecruiterSection from "./components/RecruiterSection"
 import Projects from "./components/Projects"
-import Process from "./components/Process"
 import Technologies from "./components/Technologies"
 import FinalCTA from "./components/FinalCTA"
 import Footer from "./components/Footer"
@@ -28,9 +27,8 @@ function App() {
          <Navbar />
          <Hero />
          <SocialProof />
-         <Services />
+         <RecruiterSection />
          <Projects />
-         <Process />
          <Technologies />
          <FinalCTA />
          <Footer />

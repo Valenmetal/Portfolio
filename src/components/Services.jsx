@@ -15,39 +15,39 @@ gsap.registerPlugin(ScrollTrigger)
 const services = [
    {
       icon: <IconDesign />,
-      title: "Diseño a Medida",
+      title: "Custom Design",
       description:
-         "Sitios web que reflejan la identidad visual y filosofía de tu estudio. Sin plantillas genéricas.",
+         "Unique UI/UX tailored to your brand's identity. I build from scratch, avoiding generic templates.",
    },
    {
       icon: <IconSpeed />,
-      title: "Rendimiento Ultra Rápido",
+      title: "Ultra-Fast Performance",
       description:
-         "Carga en menos de 2 segundos. Optimizado para SEO y para que Google posicione tu estudio primero.",
+         "Optimized for speed and core web vitals. I ensure your site loads instantly for better user retention.",
    },
    {
       icon: <IconResponsive />,
-      title: "100% Responsive",
+      title: "Seamlessly Responsive",
       description:
-         "Experiencia impecable en cualquier dispositivo. Tus clientes ven tu portfolio perfecto desde el móvil.",
+         "A consistent and flawless experience across desktops, tablets, and smartphones.",
    },
    {
       icon: <IconAnimation />,
-      title: "Animaciones Sofisticadas",
+      title: "Premium Animations",
       description:
-         "Micro-interacciones y transiciones que elevan la percepción de tu marca a nivel premium.",
+         "Sophisticated micro-interactions and transitions that elevate the perceived value of your product.",
    },
    {
       icon: <IconMaintenance />,
-      title: "Mantenimiento Incluido",
+      title: "Scalable Full Stack",
       description:
-         "Soporte post-lanzamiento y actualizaciones para que tu sitio esté siempre al día.",
+         "Robust backends and efficient frontends designed to scale as your business grows.",
    },
    {
       icon: <IconConversion />,
-      title: "Orientado a Conversión",
+      title: "Business Oriented",
       description:
-         "Estructura pensada para que cada visitante se convierta en una consulta real para tu estudio.",
+         "Strategic code and design built to turn casual visitors into loyal customers and users.",
    },
 ]
 
@@ -79,9 +79,9 @@ export default function Services() {
             <span>02</span>
             <div className="label-line" />
          </div>
-         <h2>Qué Ofrezco</h2>
+         <h2>Expertise</h2>
          <p className="services-subtitle">
-            Todo lo que tu estudio necesita <br /> para destacar en el mundo digital.
+            Providing end-to-end solutions <br /> for high-impact digital products.
          </p>
          <div className="services-grid">
             {services.map((service, i) => (

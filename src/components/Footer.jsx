@@ -37,7 +37,7 @@ export default function Footer() {
          </div>
          <p className="footer-text">Valentino Geronzi — Full Stack Developer</p>
          <p className="footer-text footer-copyright">
-            © 2026 · Todos los derechos reservados
+            © 2026 · All rights reserved
          </p>
       </footer>
    )

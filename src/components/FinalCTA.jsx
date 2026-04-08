@@ -27,20 +27,20 @@ export default function FinalCTA() {
    return (
       <section className="final-cta">
          <div className="final-cta-content">
-            <h2>¿Listo para elevar la presencia digital de tu estudio?</h2>
+            <h2>Ready to build something extraordinary?</h2>
             <p>
-               Agendá una consulta gratuita de 30 minutos. Sin compromiso, sin letra
-               chica. Conversemos sobre cómo puedo ayudarte.
+               Let's discuss how I can help you scale your digital presence. 
+               Reach out via email or LinkedIn to get started.
             </p>
             <div className="final-cta-buttons">
                <a href="mailto:valentinogeronzi@hotmail.com" className="btn-primary">
-                  Quiero mi prototipo gratuito →
+                  Let's Work Together →
                </a>
                <a
                   href="https://www.linkedin.com/in/valentino-geronzi-404945217/"
                   target="_blank"
                   className="btn-secondary">
-                  Hablemos por LinkedIn
+                  LinkedIn Profile
                </a>
             </div>
          </div>

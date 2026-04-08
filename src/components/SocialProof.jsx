@@ -5,10 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 const stats = [
-   { number: "+3", label: "Años de experiencia" },
-   { number: "+10", label: "Proyectos entregados" },
-   { number: "100%", label: "Clientes satisfechos" },
-   { number: "2 sem", label: "Entrega promedio" },
+   { number: "+5", label: "Years of experience" },
+   { number: "+10", label: "Projects delivered" },
+   { number: "100%", label: "Happy clients" },
+   { number: "2 wks", label: "Avg. delivery" },
 ]
 
 export default function SocialProof() {

@@ -48,16 +48,17 @@ export default function Hero() {
 
       return () => ctx.revert()
    }, [])
+
    return (
       <section id="me" className="hero">
          <main className="hero-grid">
             <div className="hero-container">
                <p id="hello">Valentino Geronzi</p>
                <h1 className="name">
-                  Websites que <span>construyen marca.</span>
+                  Building Digital <span>Excellence.</span>
                </h1>
                <div className="logo-container">
-                  <p>Desarrollo web especializado para estudios de arquitectura.</p>
+                  <p>High-performance Full Stack Development for modern brands.</p>
                   <div className="stagger">
                      <a
                         href="https://github.com/Valenmetal"
@@ -87,18 +88,17 @@ export default function Hero() {
 
                <div className="hero-content-block">
                   <p className="hero-description">
-                     Diseño y desarrollo sitios web de alto rendimiento que reflejan
-                     la visión de tu estudio, atraen clientes y convierten visitantes
-                     en consultas reales.
+                     I design and build high-performance web applications that combine clean code 
+                     with premium user experiences to drive real impact for your business.
                   </p>
                   <div className="hero-ctas">
                      <a
                         href="mailto:valentinogeronzi@hotmail.com"
                         className="btn-primary">
-                        Quiero mi prototipo gratuito →
+                        Let's Talk →
                      </a>
                      <a href="#projects" className="btn-secondary">
-                        Ver proyectos
+                        View Projects
                      </a>
                   </div>
                </div>

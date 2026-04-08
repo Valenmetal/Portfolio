@@ -43,17 +43,17 @@ export default function Navbar() {
             <ul className={isOpen ? "show" : ""}>
                <li>
                   <a href="#services" onClick={() => setIsOpen(false)}>
-                     Servicios
+                     Services
                   </a>
                </li>
                <li>
                   <a href="#projects" onClick={() => setIsOpen(false)}>
-                     Proyectos
+                     Projects
                   </a>
                </li>
                <li>
                   <a href="#process" onClick={() => setIsOpen(false)}>
-                     Proceso
+                     Process
                   </a>
                </li>
                <li>
@@ -63,7 +63,7 @@ export default function Navbar() {
                </li>
                <li className="mobile-only">
                   <a href="mailto:valentinogeronzi@hotmail.com" className="nav-cta">
-                     Contactar
+                     Contact
                   </a>
                </li>
             </ul>
@@ -71,7 +71,7 @@ export default function Navbar() {
             <a
                href="mailto:valentinogeronzi@hotmail.com"
                className="nav-cta desktop-only">
-               Contactar
+               Contact
             </a>
          </main>
       </nav>
